@@ -141,8 +141,8 @@ def send_message(to_user, access_token, region_name, weather, temp, wind_dir, no
         "url": "http://weixin.qq.com/download",
         "topcolor": "#FF0000",
         "miniprogram": {
-            appid: "wx4009d9a98f49edc5",
-            pagepath: "index"
+            "appid": "wx4009d9a98f49edc5",
+            "pagepath": "index"
         },
         "data": {
             "title": {
