@@ -179,9 +179,9 @@ if __name__ == "__main__":
     # 接收的用户
     users = config["user"]
     # 传入地区获取天气信息
-    if note_ch == "" and note_en == "":
+    # if note_ch == "" and note_en == "":
         # 获取词霸每日金句
-        note_ch, note_en = get_ciba()
+        # note_ch, note_en = get_ciba()
     # 公众号推送消息
     for user in users:
         send_message(user, accessToken, region, weather, temp, wind_dir, note_ch, note_en)
