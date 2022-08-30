@@ -181,8 +181,8 @@ if __name__ == "__main__":
     # 传入地区获取天气信息
     # if note_ch == "" and note_en == "":
         # 获取词霸每日金句
-        note_ch, note_en = get_ciba()
+        # note_ch, note_en = get_ciba()
     # 公众号推送消息
     for user in users:
-        send_message(user, accessToken, , note_en)
+        send_message(user, accessToken)
     os.system("pause")
