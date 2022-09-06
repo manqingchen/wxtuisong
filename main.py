@@ -141,28 +141,38 @@ def send_message(to_user, access_token, region_name, weather, temp, wind_dir, no
         "url": "http://weixin.qq.com/download",
         "topcolor": "#FF0000",
         "data": {
-            
-            "title": {
-                "value": "测试交易用户",
-                "color": get_color(),
+            "date": {
+                "value": "{} {}".format(today, week),
+                "color": get_color()
             },
-            "amount": {
-                "value": "测试交易金额",
-                "color": get_color(),
+            "region": {
+                "value": region_name,
+                "color": get_color()
             },
-            "type": {
-                "value": "测试交易类型",
-                "color": get_color(),
+            "weather": {
+                "value": weather,
+                "color": get_color()
             },
-            "timer": {
-                "value": "测试交易时间",
-                "color": get_color(),
+            "temp": {
+                "value": temp,
+                "color": get_color()
             },
-            "id": {
-                "value": "测试单号",
-                "color": get_color(),
+            "wind_dir": {
+                "value": wind_dir,
+                "color": get_color()
             },
-            
+            "love_day": {
+                "value": love_days,
+                "color": get_color()
+            },
+            "note_en": {
+                "value": note_en,
+                "color": get_color()
+            },
+            "note_ch": {
+                "value": note_ch,
+                "color": get_color()
+            }
         }
     }
     for key, value in birthdays.items():
