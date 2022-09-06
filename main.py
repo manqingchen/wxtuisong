@@ -141,6 +141,7 @@ def send_message(to_user, access_token, region_name, weather, temp, wind_dir, no
         "url": "http://weixin.qq.com/download",
         "topcolor": "#FF0000",
         "data": {
+            
             "title": {
                 "value": "测试交易用户",
                 "color": get_color(),
